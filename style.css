@@ -1,0 +1,98 @@
+
+*{
+    font-family: 'Calibri';
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(90deg,rgb(4, 123, 197),rgb(1, 29, 95));
+}
+
+.main{
+    background-color:white;
+    width:90%;
+    max-width: 600px;
+    margin: 50px auto 0px; /* this means 100px from top, 0 from bottom and auto for left and right*/
+    border-radius: 10px;
+    padding:30px;
+    
+}
+
+.main h1{
+    font-size:27px;
+    margin-top:0px;
+    border-bottom:1px solid black;
+    padding-bottom:5px;
+}
+
+#questionArea{
+    font-size:20px;
+}
+
+.start{
+    width:50%;
+    max-width:170px;
+    height:55px;
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    background-color:rgb(4, 123, 197);
+    border:2px solid black;
+    border-radius:40px;
+    text-align:center;
+    display:block;
+    margin: 0 auto;
+
+    /*son iki satır butonu ortalamaya yarar. İlk olarak blok elementi olarak 
+    ayarlanır ve tüm satırı kaplar hale getirilir. İkinci olarak margin'deki 0;
+    üst ve alt margin'inin 0 olduğunu ve sağ solun otomatik ayarlandığını gösterir */
+    
+}
+
+.start:hover{
+    background-color:rgb(15, 89, 168);
+    text-shadow: 0 0 0px #fff, 0 0 20px #fff, 0 0 10px #fff, 0 0 40px rgb(9, 9, 139), 0 0 70px rgb(7, 7, 124), 0 0 80px rgb(8, 8, 118), 0 0 100px rgb(6, 6, 111), 0 0 150px #00f;
+    cursor:pointer;
+}
+
+.btn{
+    width:95%;
+    padding:10px 0px;
+    margin:10px;
+    cursor:pointer;
+    text-align:left;
+    padding-left:8px;
+    background-color: white;
+    border:0.5px solid black;
+    border-radius:8px;
+    font-size:17px;
+
+}
+
+.btn:hover:not([disabled]){
+    background-color:rgb(7, 7, 118) ;
+    color:white;
+}
+
+.btn:disabled{
+    cursor:no-drop;
+    color:black;
+}
+
+.next{
+
+    background-color:rgb(30, 30, 136);
+    color:white;
+    font-weight:500px;
+    font-size:18px;
+    width:150px;
+    margin:20px auto 0; 
+    padding:10px;
+    cursor:pointer;
+    border-radius:4px;
+    border:none;
+}
+
+.true{
+    background-color: green;
+}
